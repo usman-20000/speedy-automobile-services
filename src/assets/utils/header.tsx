@@ -1,5 +1,7 @@
 
+import Image from "next/image";
 import Link from "next/link";
+import logo from '../images/icon.png';
 
 export default function Header() {
     const phoneDisplay = "00971505993679";
@@ -10,9 +12,14 @@ export default function Header() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">S</div>
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-md">
+                            <Image src={logo}
+                                className="h-10 w-10 rounded-full"
+                                alt="Speedy Automobile Services"
+                            />
+                        </div>
                         <div>
-                            <h1 className="text-base sm:text-lg font-semibold">Speedy Automobile</h1>
+                            <h1 className="text-base sm:text-lg font-semibold">Speedy Automobile Services</h1>
                             <p className="text-xs text-gray-600 dark:text-gray-400">On-site car repair • No towing</p>
                         </div>
                     </div>
