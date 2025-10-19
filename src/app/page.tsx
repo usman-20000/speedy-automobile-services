@@ -32,7 +32,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="car jumpstart Dubai, battery replacement, tyre repair Dubai, on-site car service, speedy automobile services, car battery delivery, roadside assistance"
+          content="car jumpstart Dubai, battery replacement, tyre repair Dubai, on-site car service, speedy automobile services, car battery delivery, roadside assistance, car repair Dubai, puncture repair, mobile car service"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.speedyautomobile.ae/" />
