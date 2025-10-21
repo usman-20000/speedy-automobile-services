@@ -1,10 +1,30 @@
 "use client";
 import Header from "@/assets/utils/header";
+import Head from "next/head";
+import Script from "next/script";
 import React from "react";
 
 export default function About() {
     return (
         <div className="min-h-screen flex flex-col font-sans bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
+            <Head>
+                <Script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=AW-17665624410"
+                />
+                <Script
+                    id="google-ads-tag"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17665624410');
+          `,
+                    }}
+                />
+            </Head>
             <Header />
             <section className="min-h-screen bg-[#0D0D0D] text-gray-300 flex items-center justify-center px-6 py-16">
                 <div className="max-w-4xl text-center space-y-6">

@@ -3,6 +3,8 @@ import Link from "next/link";
 import image01 from "../assets/images/image01.jpeg";
 import Image from "next/image";
 import Header from "@/assets/utils/header";
+import { Html } from "next/document";
+import Script from "next/script";
 
 export default function Home() {
   const phoneDisplay = "00971505993679";
@@ -23,8 +25,24 @@ export default function Home() {
     <>
       {/* ✅ SEO Meta Tags for Google */}
       <Head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17665624410"
+        />
+        <Script
+          id="google-ads-tag"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17665624410');
+          `,
+          }}
+        />
         <title>
-          Speedy Automobile Services | On-Site Car Repair, Jumpstart, Battery Replacement in Dubai
+          Speedy Automobile Services | uae | On-Site Car Repair, Jumpstart, Battery Replacement in Dubai
         </title>
         <meta
           name="description"
@@ -143,7 +161,7 @@ export default function Home() {
                 <Image
                   src={image01}
                   alt="Speedy Automobile Services"
-                  className="w-full h-64"
+                  className="w-full h-74"
                 />
               </div>
 
