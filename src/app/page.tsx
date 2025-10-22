@@ -23,10 +23,10 @@ export default function Home() {
 
   return (
     <>
-      {/* ✅ SEO Meta Tags for Google */}
       <Head>
+        {/* ✅ SEO Meta Tags for Google */}
         <Script
-          async
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-17665624410"
         />
         <Script
@@ -53,14 +53,14 @@ export default function Home() {
           content="car jumpstart Dubai, battery replacement, tyre repair Dubai, on-site car service, speedy automobile services, car battery delivery, roadside assistance, car repair Dubai, puncture repair, mobile car service"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.speedyautomobile.ae/" />
+        <link rel="canonical" href="https://www.speedyautomobileservices.com/" />
         <meta property="og:title" content="Speedy Automobile Services | On-site Car Repair Dubai" />
         <meta
           property="og:description"
           content="Quick car repair at your location — battery, tyre, and jumpstart service in Dubai. No towing, no waiting."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.speedyautomobile.ae/" />
+        <meta property="og:url" content="https://www.speedyautomobileservices.com/" />
         <meta property="og:image" content="/logo.png" />
       </Head>
 
