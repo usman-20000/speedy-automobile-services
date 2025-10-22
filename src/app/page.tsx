@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import Link from "next/link";
 import image01 from "../assets/images/image01.jpeg";
@@ -6,7 +8,6 @@ import Header from "@/assets/utils/header";
 import { Html } from "next/document";
 import Script from "next/script";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
-import { useEffect } from "react";
 
 export default function Home() {
   const phoneDisplay = "00971505993679";

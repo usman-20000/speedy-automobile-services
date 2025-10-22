@@ -1,7 +1,9 @@
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../images/icon.png';
+
 
 export default function Header() {
     const phoneDisplay = "00971505993679";
