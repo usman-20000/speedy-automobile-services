@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "@/assets/utils/header";
 import { Html } from "next/document";
 import Script from "next/script";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Home() {
   const phoneDisplay = "00971505993679";
@@ -23,24 +24,12 @@ export default function Home() {
 
   return (
     <>
+      {/* <GoogleTagManager
+        gtmId="AW-17665624410"
+      /> */}
+      {/* <GoogleAnalytics gaId="AW-17665624410" /> */}
       <Head>
         {/* ✅ SEO Meta Tags for Google */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17665624410"
-        />
-        <Script
-          id="google-ads-tag"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17665624410');
-          `,
-          }}
-        />
         <title>
           Speedy Automobile Services | uae | On-Site Car Repair, Jumpstart, Battery Replacement in Dubai
         </title>

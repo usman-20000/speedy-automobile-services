@@ -1,6 +1,5 @@
 "use client";
 import Header from "@/assets/utils/header";
-import Script from "next/script";
 import React, { useState } from "react";
 
 export default function Contact() {
@@ -19,22 +18,7 @@ export default function Contact() {
 
     return (
         <div className="min-h-screen flex flex-col font-sans bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
-            <Script
-                strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=AW-17665624410"
-            />
-            <Script
-                id="google-ads-tag"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17665624410');
-          `,
-                }}
-            />
+            
             <Header />
             <section className="min-h-screen bg-[#0D0D0D] text-gray-300 flex items-center justify-center px-6 py-16">
                 <div className="max-w-4xl w-full space-y-8">
