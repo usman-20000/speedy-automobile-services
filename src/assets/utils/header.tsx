@@ -7,6 +7,28 @@ export default function Header() {
     const phoneDisplay = "00971505993679";
     const telHref = `tel:${phoneDisplay}`;
     const whatsappHref = "https://wa.me/971505993679";
+
+    const handleCallClick = () => {
+        if (typeof window !== "undefined" && window.gtag) {
+            window.gtag("event", "conversion", {
+                send_to: "AW-17665624410/wbWDCLSz9LEbENqS0OdB",
+            });
+        }
+        window.location.href = telHref;
+    };
+
+    const handleWhatsAppClick = () => {
+        if (typeof window !== "undefined" && window.gtag) {
+            window.gtag("event", "conversion", {
+                send_to: "AW-17665624410/wbWDCLSz9LEbENqS0OdB",
+            });
+        }
+
+        // Redirect to WhatsApp after triggering conversion
+        window.open("https://wa.me/971505993679", "_blank");
+    };
+
+
     return (
         <header className="w-full backdrop-blur-sm bg-white/70 dark:bg-gray-900/60 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
@@ -33,10 +55,10 @@ export default function Header() {
 
                 <div className="flex items-center gap-3">
                     <div className="hidden lg:flex items-center gap-3 ml-2">
-                        <a href={telHref} aria-label="Call Speedy now" className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg shadow-lg hover:opacity-95">
+                        <a onClick={handleCallClick} role="button" aria-label="Call Speedy now" className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg shadow-lg hover:opacity-95">
                             Call now
                         </a>
-                        <a href={whatsappHref} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Speedy" className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg shadow-lg hover:opacity-95">
+                        <a onClick={handleWhatsAppClick} role="button" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Speedy" className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg shadow-lg hover:opacity-95">
                             WhatsApp
                         </a>
                     </div>

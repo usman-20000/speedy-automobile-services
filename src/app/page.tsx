@@ -6,6 +6,7 @@ import Header from "@/assets/utils/header";
 import { Html } from "next/document";
 import Script from "next/script";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+import { useEffect } from "react";
 
 export default function Home() {
   const phoneDisplay = "00971505993679";
@@ -22,8 +23,10 @@ export default function Home() {
     "Sedan", "SUV", "Hatchback", "Coupe", "Convertible", "Minivan", "Pickup", "Electric vehicles"
   ];
 
+
   return (
     <>
+
       {/* <GoogleTagManager
         gtmId="AW-17665624410"
       /> */}
