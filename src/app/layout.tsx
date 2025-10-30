@@ -17,6 +17,20 @@ export const metadata: Metadata = {
   title: "Speedy Automobile Services",
   description:
     "Speedy Automobile Services provides fast on-site car repair — jumpstart, battery replacement, tyre change & puncture repair in Dubai. No towing, no waiting — call 00971505993679 now!",
+  keywords: [
+    "mobile car repair dubai",
+    "car battery replacement dubai",
+    "emergency jumpstart dubai",
+    "jump start",
+    "jump starter",
+    "battery starter for car",
+    "car jump start",
+    "battery change",
+    "battery change dubai",
+    "tyre puncture repair dubai",
+    "mobile mechanic dubai",
+    "speedy automobile services"
+  ],
 };
 
 export default function RootLayout({
