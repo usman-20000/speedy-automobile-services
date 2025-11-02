@@ -55,7 +55,11 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              //ad id
               gtag('config', 'AW-17665624410');
+
+              //google analytic id
+              gtag('config', 'G-YT7Y5JSCC0');
             `,
           }}
         />
