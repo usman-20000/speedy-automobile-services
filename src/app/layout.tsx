@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "mobile mechanic dubai",
     "speedy automobile services"
   ],
+  verification: {
+    google: "DA5BZsGv9fEVmXOhaq6-Sh2V_JNszx_sJq7javZHUYM",
+  },
 };
 
 export default function RootLayout({
