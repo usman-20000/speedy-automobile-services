@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import image01 from "../assets/images/image01.jpeg";
+import image02 from "../assets/images/eagle.jpeg";
 import Image from "next/image";
 import Header from "@/assets/utils/header";
 import { Html } from "next/document";
@@ -150,11 +151,16 @@ export default function Home() {
 
             {/* Right Side (Image + Info Card) */}
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <div className="rounded-2xl overflow-hidden shadow-2xl flex flex-row items-center justify-between">
                 <Image
                   src={image01}
                   alt="Speedy Automobile Services"
-                  className="w-full h-74"
+                  className="w-[60%] h-74"
+                />
+                    <Image
+                  src={image02}
+                  alt="Speedy Automobile Services"
+                  className="w-[40%] h-74"
                 />
               </div>
 
