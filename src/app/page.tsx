@@ -36,11 +36,11 @@ export default function Home() {
       <Head>
         {/* ✅ SEO Meta Tags for Google */}
         <title>
-          Speedy Automobile Services | uae | On-Site Car Repair, Jumpstart, Battery Replacement in Dubai
+          Mobile Car Repair & Battery Replacement in UAE | Speedy Automobile Services
         </title>
         <meta
           name="description"
-          content="Speedy Automobile Services provides fast on-site car repair — jumpstart, battery replacement, tyre change & puncture repair in Dubai. No towing, no waiting — call 00971505993679 now!"
+          content="Fast on-site car repair in UAE. Battery replacement, jumpstart, tyre repair & roadside assistance. We come to you – no towing required. Call now 00971505993679."
         />
         <meta
           name="keywords"

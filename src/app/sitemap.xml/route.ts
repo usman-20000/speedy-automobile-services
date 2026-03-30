@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const baseUrl = "https://speedyautomobileservices.com";
 
 // List your static pages
-const staticPaths = ["/", "/about", "/contact", "/car-battery-replacement-dubai"];
+const staticPaths = ["/", "/about", "/contact", "/car-battery-replacement-dubai", "/mobile-mechanic-dubai"];
 
 export async function GET() {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
