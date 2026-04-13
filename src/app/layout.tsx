@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Speedy Automobile Services",
   description:
-    "Speedy Automobile Services provides fast on-site car repair — jumpstart, battery replacement, tyre change & puncture repair in Dubai. No towing, no waiting — call 00971505993679 now!",
+    "Speedy Automobile Services provides fast on-site car repair — jumpstart, battery replacement, car AC repair Dubai, auto AC repair Dubai, car AC service Dubai, tyre change & puncture repair in Dubai. No towing, no waiting — call 00971505993679 now!",
   keywords: [
     "mobile car repair dubai",
     "car battery replacement dubai",
@@ -29,7 +29,10 @@ export const metadata: Metadata = {
     "battery change dubai",
     "tyre puncture repair dubai",
     "mobile mechanic dubai",
-    "speedy automobile services"
+    "speedy automobile services",
+    "car AC repair Dubai",
+    "auto AC repair Dubai",
+    "car AC service Dubai"
   ],
   verification: {
     google: "DA5BZsGv9fEVmXOhaq6-Sh2V_JNszx_sJq7javZHUYM",
@@ -66,7 +69,7 @@ export default function RootLayout({
             `,
           }}
         />
-        
+
 
         {children}
       </body>

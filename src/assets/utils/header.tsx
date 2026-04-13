@@ -53,6 +53,8 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-3 ml-6">
           <Link href="/" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Home</Link>
+          <Link href="/car-battery-replacement-dubai" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Battery Replacement</Link>
+          <Link href="/mobile-mechanic-dubai" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Mobile Mechanic</Link>
           <Link href="/about" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">About</Link>
           <Link href="/contact" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Contact</Link>
         </nav>
@@ -93,6 +95,7 @@ export default function Header() {
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
           <nav className="flex flex-col px-4 py-3 gap-2">
             <Link href="/" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Home</Link>
+            <Link href="/car-battery-replacement-dubai" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Battery Replacement</Link>
             <Link href="/about" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">About</Link>
             <Link href="/contact" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Contact</Link>
             <button onClick={handleCallClick} className="px-3 py-2 bg-indigo-600 text-white rounded-md shadow-md hover:opacity-95">Call now</button>

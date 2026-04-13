@@ -44,7 +44,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Dubai car jumpstart, Dubai battery replacement, Dubai roadside assistance, Abu Dhabi mobile car service, on-site tyre repair Dubai, speedy automobile services UAE, vehicle emergency service Dubai, mobile mechanic Dubai"
+          content="Dubai car jumpstart, Dubai battery replacement, car AC repair Dubai, auto AC repair Dubai, car AC service Dubai, Dubai roadside assistance, Abu Dhabi mobile car service, on-site tyre repair Dubai, speedy automobile services UAE, vehicle emergency service Dubai, mobile mechanic Dubai"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.speedyautomobileservices.com/" />
@@ -78,7 +78,7 @@ export default function Home() {
             "areaServed": ["Dubai"],
             "url": "https://www.speedyautomobileservices.com/",
             "priceRange": "AED",
-            "description": "Mobile car repair, ramp-up jumpstarts, battery replacement, tyre change and roadside support throughout Dubai and the UAE."
+            "description": "Mobile car repair, ramp-up jumpstarts, battery replacement, tyre change and roadside support, car AC repair Dubai, auto AC repair Dubai, car AC service Dubai throughout Dubai and the UAE."
           }`}
         </Script>
       </Head>
@@ -182,7 +182,7 @@ export default function Home() {
                   alt="Speedy Automobile Services"
                   className="w-[60%] h-74"
                 />
-                    <Image
+                <Image
                   src={image02}
                   alt="Speedy Automobile Services"
                   className="w-[40%] h-74"
@@ -229,7 +229,7 @@ export default function Home() {
             <p className="text-base leading-relaxed mb-4">
               Every year, thousands of people rely on us for 24/7 roadside support. We have trained staff, highly stocked vehicles, and direct Dubai operational dispatch so we can answer calls and reach clients in 15-30 minutes in the most trafficked districts including Business Bay, JLT, Marina, Deira, and Al Quoz.
               We also extend full service to Abu Dhabi and Sharjah, with technicians on the road who know the local neighborhoods by heart.
-              Because traffic patterns, climate, and fleet composition vary across the Emirates, we match local needs (electric vehicle battery replacement, petrol and diesel cars, 4x4 SUVs, taxis, and light commercial vehicles).
+              Because traffic patterns, climate, and fleet composition vary across the Emirates, we match local needs (electric vehicle <Link href="/car-battery-replacement-dubai">battery replacement</Link>, petrol and diesel cars, 4x4 SUVs, taxis, and light commercial vehicles).
             </p>
             <p className="text-base leading-relaxed mb-4">
               A core piece of our advantage is complete on-site repair. That means the customer does not pay for towing, and there is no waiting time in workshop queues.
