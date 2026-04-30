@@ -5,6 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from '../images/icon.png';
 
+// ✅ Fix: Extend the Window interface so TypeScript recognizes gtag
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -61,7 +68,6 @@ export default function Header() {
 
         {/* Action Buttons & Hamburger */}
         <div className="flex items-center gap-3">
-          {/* Desktop Buttons */}
           <div className="hidden lg:flex items-center gap-3 ml-2">
             <button onClick={handleCallClick} className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white rounded-lg shadow-lg hover:opacity-95">
               Call now
@@ -71,7 +77,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -98,8 +103,8 @@ export default function Header() {
             <Link href="/car-battery-replacement-dubai" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Battery Replacement</Link>
             <Link href="/about" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">About</Link>
             <Link href="/contact" className="px-3 py-2 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-800">Contact</Link>
-            <button onClick={handleCallClick} className="px-3 py-2 bg-indigo-600 text-white rounded-md shadow-md hover:opacity-95">Call now</button>
-            <button onClick={handleWhatsAppClick} className="px-3 py-2 bg-green-600 text-white rounded-md shadow-md hover:opacity-95">WhatsApp</button>
+            <button onClick={handleCallClick} className="px-3 py-2 bg-indigo-600 text-white rounded-md shadow-md hover:opacity-95 text-left">Call now</button>
+            <button onClick={handleWhatsAppClick} className="px-3 py-2 bg-green-600 text-white rounded-md shadow-md hover:opacity-95 text-left">WhatsApp</button>
           </nav>
         </div>
       )}
